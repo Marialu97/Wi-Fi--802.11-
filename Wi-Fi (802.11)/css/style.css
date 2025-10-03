@@ -1,0 +1,231 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #38b6ff;
+  background: linear-gradient(to right, #6d40cc, #3f80ae, #253d58 );
+  
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho / nav */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #333;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f8f8f8; /* laranja / cor de destaque */
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #f8f8f8;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.nav-link:hover, .nav-link.active {
+  background-color: #253d58;
+  color: white;
+}
+
+.btn-cv {
+  padding: 8px 16px;
+  background-color: #666;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+/* botao toggle para menu responsivo */
+.btn-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  padding-top: 100px; /* considerando header fixo de ~70 a 100px */
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.hero-content h1 span {
+  color: #FF4500;
+}
+
+.hero-content p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.hero-content .btn {
+  padding: 10px 20px;
+  background-color: #FF4500;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Hero imagem */
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* Seções genéricas */
+.section {
+  padding: 80px 0;
+}
+
+.about-section {
+  background: #f8f8f8;
+}
+
+/* Rodapé */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    display: none;
+  }
+  .nav.show {
+    display: flex;
+  }
+  .btn-toggle {
+    display: block;
+  }
+
+  .hero .container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero-image {
+    margin-bottom: 30px;
+  }
+}
+/* Carousel Section */
+/* Carousel Section */
+.carousel-section {
+  padding: 0;
+  margin-top: 80px; /* altura do header */
+  margin-bottom: 40px; /* altura do footer */
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+/* Carrossel ocupa toda a largura da viewport */
+.carousel {
+  position: relative;
+  width: 100vw; /* largura total da tela */
+  height: calc(100vh - 120px); /* 100vh menos header (80px) e footer (40px) */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+/* Cada item do carrossel */
+.carousel-item {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item.active {
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+}
+
+/* Imagem ocupa todo o espaço do item */
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .carousel {
+    height: 250px; /* altura fixa para mobile */
+  }
+}

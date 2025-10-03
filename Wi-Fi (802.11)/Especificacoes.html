@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wi-Fi - Services</title>
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Wi-Fi<span style="color: #f8f8f8;">(802.11)</span></a>
+      <nav class="nav" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="essência.html" class="nav-link">Essência</a>
+        <a href="Especificacoes.html" class="nav-link">Especificações</a>
+        <a href="Aplicacoes.html" class="nav-link">Aplicações</a>
+        <a href="Pontos.html" class="nav-link">Pontos</a>
+        <a href="Tendencias.html" class="nav-link">Tendências</a>
+        <a href="Demonstracao.html" class="nav-link">Demonstração</a>
+      </nav>
+      <a href="bibliografia.html" class="btn-cv">Bibliografia</a>
+      <button class="btn-toggle" id="btn-toggle">☰</button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h2>Ficha Técnica: Wi-Fi (802.11)</h2>
+      <table class="tech-specs">
+        <thead>
+          <tr>
+            <th>Característica</th>
+            <th>Detalhes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alcance</td>
+            <td>30 a 100 metros em ambientes abertos. Em ambientes internos, geralmente entre 10 a 30 metros devido a paredes e interferências.</td>
+          </tr>
+          <tr>
+            <td>Consumo de Energia</td>
+            <td>Alto — consome mais energia que outros protocolos IoT, dificultando o uso em dispositivos com bateria limitada.</td>
+          </tr>
+          <tr>
+            <td>Largura de Banda (Volume de Dados)</td>
+            <td>Alta — varia de 11 Mbps (802.11b) até 9,6 Gbps (Wi-Fi 6), ideal para aplicações que demandam transmissão rápida e grande volume de dados.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <section class="tipos-section">
+        <h2>Comparativo de Padrões Wi-Fi (802.11)</h2>
+        <table class="tipos-specs">
+          <thead>
+            <tr>
+              <th>Padrão</th>
+              <th>Ano</th>
+              <th>Frequência</th>
+              <th>Velocidade Máxima</th>
+              <th>Observações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>802.11a</td>
+              <td>1999</td>
+              <td>5 GHz</td>
+              <td>Até 54 Mbps</td>
+              <td>Frequência menos congestionada, mas alcance menor.</td>
+            </tr>
+            <tr>
+              <td>802.11g</td>
+              <td>2003</td>
+              <td>2,4 GHz</td>
+              <td>Até 54 Mbps</td>
+              <td>Combina compatibilidade do 2,4 GHz com velocidade de 802.11a.</td>
+            </tr>
+            <tr>
+              <td>802.11ax (Wi-Fi 6)</td>
+              <td>2019</td>
+              <td>2,4 / 5 / 6 GHz</td>
+              <td>Até 9,6 Gbps</td>
+              <td>Mais eficiente em ambientes congestionados, menor latência, melhor uso de energia.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Todos os Direitos Reservados</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
