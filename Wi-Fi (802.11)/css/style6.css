@@ -193,4 +193,36 @@ footer {
   font-size: 1rem;
   line-height: 1.5;
 }
+/* Centralizar título e vídeo */
+.video-section {
+  text-align: center;
+  margin-top: 100px; /* espaço abaixo do header fixo */
+  margin-bottom: 80px; /* espaço acima do footer fixo */
+  color: #fff;
+}
 
+.section-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #cccccc;
+}
+
+/* Container responsivo para vídeo */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* largura máxima do vídeo */
+  margin: 0 auto; /* centraliza */
+  padding-bottom: 56.25%; /* proporção 16:9 */
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px; /* borda arredondada opcional */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}

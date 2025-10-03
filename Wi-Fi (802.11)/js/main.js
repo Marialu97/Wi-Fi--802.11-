@@ -78,7 +78,7 @@ if (items.length > 0) {document.addEventListener('DOMContentLoaded', () => {
   setInterval(() => {
     currentSlide = (currentSlide + 1) % items.length;
     showSlide(currentSlide);
-  }, 3000); // 3 segundos
+  }, 5000); // 3 segundos
 }
 
 

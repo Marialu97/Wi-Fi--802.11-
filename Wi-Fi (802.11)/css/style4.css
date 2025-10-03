@@ -81,6 +81,21 @@ body {
   cursor: pointer;
 }
 
+.img-biblio {
+  display: block;
+  max-width: 700px; /* largura máxima da imagem */
+  width: 100%; /* se adapta ao container */
+  height: auto; /* mantém proporção */
+  margin: 20px auto; /* centraliza horizontalmente */
+  border-radius: 12px; /* cantos arredondados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* sombra */
+  transition: transform 0.3s ease;
+}
+
+.img-biblio:hover {
+  transform: scale(1.05); /* efeito de zoom ao passar o mouse */
+}
+
 
 
 

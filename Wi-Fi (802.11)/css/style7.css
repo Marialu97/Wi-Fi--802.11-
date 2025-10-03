@@ -80,6 +80,121 @@ body {
   cursor: pointer;
 }
 
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #6d40cc, #3f80ae, #253d58);
+  color: #ffffff;
+}
+
+/* Cabeçalho */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #333;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #38b6ff;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #f8f8f8;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.nav-link:hover {
+  background-color: #253d58;
+  color: white;
+}
+
+/* Seção de bibliografia */
+.bibliografia-section {
+  padding-top: 120px; /* espaço para não ficar atrás do header */
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  background: linear-gradient(to right, #38b6ff, #00ffcc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #cccccc;
+}
+
+/* Lista */
+.bibliografia-list {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.bibliografia-list li {
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  line-height: 1.6;
+}
+
+.bibliografia-list a {
+  color: #38b6ff;
+  text-decoration: none;
+}
+
+.bibliografia-list a:hover {
+  text-decoration: underline;
+}
+
+/* Rodapé */
+.footer {
+  background-color: #333;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  font-size: 0.9rem;
+}
 
 
 
